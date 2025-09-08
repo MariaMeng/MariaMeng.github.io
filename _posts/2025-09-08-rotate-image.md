@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "LeetCode 1. Two Sum 题解"
-date: 2025-09-08 12:00:00 +0800
+title: "LeetCode 48. 旋转图像 题解"
+date: 2025-09-08 12:47:00 +0800
 categories: leetcode
 ---
 
