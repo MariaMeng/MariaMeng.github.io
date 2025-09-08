@@ -1,0 +1,17 @@
+/.project                                                                                                                                                          
+/pom.xml.versionsBackup
+/**/*/.project
+/**/*/target
+/**/*/.settings
+/**/*/.classpath
+/**/*/.idea
+/**/*/pom.xml.versionsBackup
+/.idea
+/**/*.iml
+/**/*/.factorypath
+*.DS_Store
+/**/logs/
+call-core/src/main/java/com/yqg/call/core/model/generated
+target/
+rebel.xml
+rebel-remote.xml
