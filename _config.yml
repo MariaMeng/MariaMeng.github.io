@@ -2,3 +2,5 @@ title: "Maria Blog"
 description: "欢迎来到我的Markdown博客"
 theme: minima
 
+header_pages:
+  - leetcode.md
