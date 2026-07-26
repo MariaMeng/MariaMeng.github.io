@@ -12,7 +12,7 @@ permalink: /借贷业务/海外借贷业务流程/
 
 <p>
   <img
-    src="{{ '/assets/images/overseas-lending-main-process.svg' | relative_url }}"
+    src="{{ '/assets/images/overseas-lending-main-process.svg' | relative_url }}?v=20260726"
     alt="海外借贷主业务过程总览"
     style="max-width:100%;height:auto;border:1px solid #e5e7eb;border-radius:8px;background:#fff;"
   />
