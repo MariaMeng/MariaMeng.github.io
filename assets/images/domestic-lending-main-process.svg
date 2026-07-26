@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 460" width="100%" role="img" aria-label="国内借贷端到端总流程图">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6b7280"/>
+    </marker>
+    <marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#9ca3af"/>
+    </marker>
+    <style>
+      .caption { fill: #6b7280; font: 11px system-ui, -apple-system, "PingFang SC", "Noto Sans SC", sans-serif; }
+      .lane-title { fill: #111827; font: 600 12px system-ui, -apple-system, "PingFang SC", "Noto Sans SC", sans-serif; }
+      .label { fill: #111827; font: 600 11px system-ui, -apple-system, "PingFang SC", "Noto Sans SC", sans-serif; }
+      .yn { fill: #6b7280; font: 10px system-ui, -apple-system, "PingFang SC", "Noto Sans SC", sans-serif; }
+      .lane-a { fill: #eff6ff; stroke: #2563eb; }
+      .lane-b { fill: #f9fafb; stroke: #d1d5db; }
+      .lane-c { fill: #fffbeb; stroke: #fcd34d; }
+      .box { fill: #ffffff; stroke: #9ca3af; }
+      .box-accent { fill: #ffffff; stroke: #2563eb; stroke-width: 2; }
+      .box-soft { fill: #f3f4f6; stroke: #9ca3af; }
+      .box-end { fill: #ecfdf5; stroke: #10b981; stroke-width: 1.5; }
+      .diamond { fill: #eff6ff; stroke: #2563eb; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <text class="caption" x="20" y="22">国内借贷端到端总流程 · 实线为主路径 · 菱形为决策 · 虚线为异常回流或渠道汇入</text>
+
+  <!-- A -->
+  <rect class="lane-a" x="16" y="36" width="1148" height="168" rx="8" stroke-width="1.5"/>
+  <text class="lane-title" x="28" y="58">A. App 主路径（贷前 → 贷中 → 贷后）</text>
+
+  <rect class="box-accent" x="28" y="76" width="88" height="40" rx="18"/>
+  <text class="label" x="72" y="100" text-anchor="middle">用户进入</text>
+  <line x1="116" y1="96" x2="132" y2="96" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect class="box" x="132" y="76" width="88" height="40" rx="5"/>
+  <text class="label" x="176" y="100" text-anchor="middle">注册/登录</text>
+  <line x1="220" y1="96" x2="236" y2="96" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect class="box" x="236" y="76" width="88" height="40" rx="5"/>
+  <text class="label" x="280" y="100" text-anchor="middle">完件鉴权</text>
+  <line x1="324" y1="96" x2="340" y2="96" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect class="box-accent" x="340" y="76" width="88" height="40" rx="5"/>
+  <text class="label" x="384" y="100" text-anchor="middle">提交授信</text>
+  <line x1="428" y1="96" x2="444" y2="96" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <polygon class="diamond" points="490,72 528,96 490,120 452,96"/>
+  <text class="label" x="490" y="92" text-anchor="middle">授信</text>
+  <text class="label" x="490" y="106" text-anchor="middle">通过?</text>
+  <text class="yn" x="536" y="88">Y</text>
+  <line x1="528" y1="96" x2="552" y2="96" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect class="box" x="552" y="76" width="88" height="40" rx="5"/>
+  <text class="label" x="596" y="100" text-anchor="middle">试算/选品</text>
+  <line x1="640" y1="96" x2="656" y2="96" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect class="box-accent" x="656" y="76" width="88" height="40" rx="5"/>
+  <text class="label" x="700" y="100" text-anchor="middle">创建订单</text>
+  <line x1="744" y1="96" x2="760" y2="96" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect class="box" x="760" y="76" width="88" height="40" rx="5"/>
+  <text class="label" x="804" y="100" text-anchor="middle">签约合同</text>
+  <line x1="848" y1="96" x2="864" y2="96" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect class="box-accent" x="864" y="76" width="88" height="40" rx="5"/>
+  <text class="label" x="908" y="100" text-anchor="middle">资方放款</text>
+  <line x1="952" y1="96" x2="968" y2="96" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <polygon class="diamond" points="1014,72 1052,96 1014,120 976,96"/>
+  <text class="label" x="1014" y="92" text-anchor="middle">放款</text>
+  <text class="label" x="1014" y="106" text-anchor="middle">成功?</text>
+
+  <text class="yn" x="1024" y="140">Y</text>
+  <line x1="1014" y1="120" x2="1014" y2="148" stroke="#6b7280" stroke-width="1.5"/>
+  <line x1="1014" y1="148" x2="908" y2="148" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect class="box-accent" x="820" y="128" width="88" height="40" rx="5"/>
+  <text class="label" x="864" y="152" text-anchor="middle">按期还款</text>
+  <line x1="820" y1="148" x2="792" y2="148" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <polygon class="diamond" points="746,124 784,148 746,172 708,148"/>
+  <text class="label" x="746" y="144" text-anchor="middle">是否</text>
+  <text class="label" x="746" y="158" text-anchor="middle">逾期?</text>
+  <text class="yn" x="680" y="140">N</text>
+  <line x1="708" y1="148" x2="680" y2="148" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect class="box-end" x="580" y="128" width="96" height="40" rx="18"/>
+  <text class="label" x="628" y="152" text-anchor="middle">结清结束</text>
+
+  <!-- B -->
+  <rect class="lane-b" x="16" y="220" width="1148" height="90" rx="8" stroke-width="1"/>
+  <text class="lane-title" x="28" y="242">B. 渠道并行路径（合作方 → 汇入主链路）</text>
+
+  <rect class="box-soft" x="28" y="256" width="110" height="40" rx="5"/>
+  <text class="label" x="83" y="280" text-anchor="middle">渠道入口</text>
+  <line x1="138" y1="276" x2="158" y2="276" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect class="box-soft" x="158" y="256" width="110" height="40" rx="5"/>
+  <text class="label" x="213" y="280" text-anchor="middle">渠道鉴权</text>
+  <line x1="268" y1="276" x2="288" y2="276" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect class="box-accent" x="288" y="256" width="110" height="40" rx="5" fill="#f3f4f6"/>
+  <text class="label" x="343" y="280" text-anchor="middle">渠道授信</text>
+  <line x1="398" y1="276" x2="418" y2="276" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect class="box-accent" x="418" y="256" width="110" height="40" rx="5" fill="#f3f4f6"/>
+  <text class="label" x="473" y="280" text-anchor="middle">渠道借款</text>
+  <line x1="528" y1="276" x2="548" y2="276" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect class="box-soft" x="548" y="256" width="130" height="40" rx="5"/>
+  <text class="label" x="613" y="280" text-anchor="middle">汇入放款/还款</text>
+  <line x1="678" y1="276" x2="698" y2="276" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect class="box-soft" x="698" y="256" width="130" height="40" rx="5"/>
+  <text class="label" x="763" y="280" text-anchor="middle">结果回调合作方</text>
+
+  <path d="M 343 256 C 343 210, 384 180, 384 116" fill="none" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#arrow-muted)"/>
+  <text class="yn" x="300" y="200">汇入授信</text>
+
+  <!-- C -->
+  <rect class="lane-c" x="16" y="326" width="1148" height="110" rx="8" stroke-width="1.5"/>
+  <text class="lane-title" x="28" y="348">C. 异常分支（拒绝 / 放款失败 / 逾期催收）</text>
+
+  <text class="yn" x="498" y="130">N</text>
+  <path d="M 490 120 C 490 180, 200 180, 200 360" fill="none" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#arrow-muted)"/>
+  <rect class="box-soft" x="140" y="366" width="120" height="40" rx="5"/>
+  <text class="label" x="200" y="390" text-anchor="middle">授信拒绝/挽回</text>
+
+  <text class="yn" x="1060" y="110">N</text>
+  <path d="M 1052 96 C 1120 96, 1120 360, 560 386" fill="none" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#arrow-muted)"/>
+  <rect class="box-soft" x="500" y="366" width="120" height="40" rx="5"/>
+  <text class="label" x="560" y="390" text-anchor="middle">失败重路由</text>
+  <path d="M 560 366 C 560 220, 908 220, 908 116" fill="none" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#arrow-muted)"/>
+  <text class="yn" x="570" y="300">再放款</text>
+
+  <text class="yn" x="756" y="180">Y</text>
+  <line x1="746" y1="172" x2="746" y2="366" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#arrow-muted)"/>
+  <rect class="box-soft" x="686" y="366" width="120" height="40" rx="5"/>
+  <text class="label" x="746" y="390" text-anchor="middle">催收协同</text>
+  <path d="M 806 386 C 860 386, 864 220, 864 168" fill="none" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#arrow-muted)"/>
+  <text class="yn" x="820" y="300">回款后再还款核销</text>
+
+  <text class="caption" x="20" y="452">A / B 是两条获客进件路径，最终共用放款与贷后账本；C 为决策否分支与逾期处理</text>
+</svg>
