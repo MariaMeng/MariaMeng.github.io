@@ -10,7 +10,13 @@ permalink: /借贷业务/海外借贷业务流程/
 
 下图对应 Easy-Cash 主业务过程（用户视角）：自营 App 借款、贷超渠道借款、贷后还款与逾期。
 
-![海外借贷主业务过程总览]({{ '/assets/images/overseas-lending-main-process.svg' | relative_url }})
+<p>
+  <img
+    src="{{ '/assets/images/overseas-lending-main-process.svg' | relative_url }}"
+    alt="海外借贷主业务过程总览"
+    style="max-width:100%;height:auto;border:1px solid #e5e7eb;border-radius:8px;background:#fff;"
+  />
+</p>
 
 **读图说明**
 
