@@ -17,7 +17,7 @@
     ]]></style>
   </defs>
 
-  <text class="title" x="20" y="24">Easy-Cash 主业务过程总览（用户视角）</text>
+  <text class="title" x="20" y="24">海外借贷主业务过程总览（用户视角）</text>
 
   <rect class="lane-a" x="16" y="40" width="1048" height="90" rx="8" stroke-width="1.5"/>
   <text class="lane-title" x="28" y="62">A. 自营 App 借款</text>
